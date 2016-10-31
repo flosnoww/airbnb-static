@@ -1,0 +1,17 @@
+<!-- <div class="container">
+  <ul class="list-inline">
+    <li class="img"></li>
+    <li class="img"></li>
+    <li class="img"></li>
+  </ul>
+</div> -->
+
+<ul class="list-inline text-center">
+  <% ["muriel", "florian"].each do |member| %>
+    <li>
+      <%= image_tag "#{member}.jpg", class: "img-circle avatar-big" %>
+      <h3><%= member.capitalize %></h3>
+    </li>
+  <% end %>
+</ul>
+
